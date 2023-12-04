@@ -60,6 +60,19 @@ a{
     color: #fff;
 }
 
+.btn-fill{
+    background-color: #2980b9;
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    transition: .3s all;
+}
+
+.btn-fill:hover{
+    background-color: #1d5b84;
+    color: #fff;
+}
+
 /* ================================================ */
 
 body{
@@ -257,7 +270,7 @@ header{
     background-color: #fff;
     border-radius: 1rem;
     position: relative;
-    z-index: 1;
+    /* z-index: 1; */
     margin-top: -10vh;
     padding: 2rem;
 }
@@ -277,7 +290,7 @@ header{
 
 #content-about .nav-link:hover{
     color: #2980b9 !important;
-    font-weight: bold;
+    /* font-weight: bold; */
     transition: .3s all;
 }
 
@@ -341,6 +354,8 @@ header{
     line-height: 0;
 }
 
+
+
 /* ol.visi{
     list-style: none;
     padding-left: 0;
@@ -392,6 +407,28 @@ ol.visi li::before{
 /* ----Tab Sejarah */
 .time-line{
     display: flex;
+    padding: 10px 0;
+    border-radius: 10px;
+    position: relative;
+}
+
+.time-line::after{
+    content: '';
+    height: 100%;
+    width: 3px;
+    background-color: #2980b9;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 5%;
+}
+
+.time-line:nth-child(2n){
+    background-color: #f5f5f5;
+}
+
+.time-line:nth-child(2n)::after{
+    content: unset;
 }
 
 .time-line .dot p {
@@ -403,13 +440,157 @@ ol.visi li::before{
     justify-content: center;
     align-items: center;
     border-radius: 100px;
+    position: relative;
+    z-index: 1;
 }
 
-.time-line .dot::after{
+/* .time-line .dot::after{
     content: '';
     height: 100%;
     width: 3px;
     background-color: #2980b9;
     display: block;
     margin: -70px auto 0 auto;
+} */
+
+.leader{
+    background-color: #2980b9;
+    color: #fff;
+    border-radius: 10px;
 }
+
+.leader .profile{
+    background-color: #2470a2;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.leader .profile .name{
+    margin: 20px 0;
+}
+
+.leader .profile .name p:nth-child(1){
+    color: #acdeff;
+}
+
+.leader .profile img{
+    height: 20vh;
+    display: block;
+    margin: 0 auto;
+}
+
+.modal-leader{
+    height: 50vh;
+}
+
+.modal-leader .img-profil{
+    height: 35vh;
+    width: 100%;
+    position: sticky;
+    object-fit: contain;
+    top: 0;
+}
+
+.struktur-img{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.struktur-img img{
+    display: block;
+    margin: 0 auto;
+}
+
+.inner-desc{
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+.search-bar form{
+    display: flex;
+    width: 100%;
+    border: 1px solid #a5a5a5;
+    border-radius: 10px;
+    padding: 5px 9px;
+    align-items: center;
+}
+
+.search-bar form i{
+    margin-right: 10px;
+}
+
+.search-bar form input{
+    width: 100%;
+    border: none !important;
+}
+
+.search-bar form input:focus{
+    outline: none;
+}
+
+.search-bar form button{
+    border: none;
+    background-color: #2980b9;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 6px;
+}
+
+.list-type a {
+    color: #252525;
+    transition: .3s all;
+}
+
+.list-type a:hover{
+    color: #2980b9;
+}
+
+.list-perangkat{
+    list-style: none;
+    padding: 0;
+}
+
+.list-perangkat li{
+    margin-bottom: 15px;
+}
+
+.list-item{
+    display: flex;
+    border: 1px solid #a5a5a5;
+    border-radius: 10px;
+    align-items: center;
+    padding: 20px;
+}
+
+.list-item .img{
+    padding: 0 40px;
+}
+
+.list-item img{
+    height: 10vh;
+}
+
+.list-item address{
+    color: #a5a5a5;
+}
+
+.pagination{
+    border-top: 2px solid #2980b9;
+    padding-top: 5px;
+}
+
+.pagination div{
+    width: 50%;
+}
+
+.pagination select{
+    width: 25%;
+}
+
+.pagination a{
+    color: #2980b9;
+}
+
+
+
