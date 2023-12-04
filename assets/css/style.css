@@ -32,6 +32,14 @@ a{
     color: #2980b9 !important;
 }
 
+.bg-blue{
+    background-color: #2980b9 ;
+}
+
+.cursor-pointer{
+    cursor: pointer !important;
+}
+
 /* ===================================Button Class */
 .btn-fill-white{
     background-color: #fff;
@@ -591,6 +599,82 @@ ol.visi li::before{
 .pagination a{
     color: #2980b9;
 }
+
+
+footer{
+    background-color: #2980b9;
+    color: #fff;
+}
+
+.logo-footer{
+    height: 5rem;
+}
+
+.footer-head{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-head .items:nth-child(1){
+    width: 30%;
+}
+
+.footer-sosmed{
+    padding-top: 20px;
+    gap: 10px;
+    display: flex;
+}
+
+.footer-sosmed a{
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    line-height: 1;
+    font-size: 1.5rem;
+    transition: .3s all;
+}
+
+.footer-sosmed a:hover{
+    background-color: #fff;
+    color: #2980b9;
+}
+
+.footer-sidemap{
+    padding-left: 33px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-sidemap .item{
+    width: 20%;
+    border-right: 1px solid #2470a2;
+}
+
+.footer-sidemap .item:last-child{
+    border-right: 0;
+}
+
+.footer-sidemap .item ul{
+    list-style: none;
+    padding: 0;
+}
+
+.footer-sidemap .item ul li{
+    padding-bottom: 5px;
+}
+
+.footer-sidemap .item li a{
+    color: #fff;
+}
+
+footer .copyright{
+    border-top: 1px solid #2470a2;
+}
+
+
+
 
 
 
