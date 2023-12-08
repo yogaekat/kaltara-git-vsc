@@ -95,6 +95,58 @@ header{
     /* z-index: 10; */
 }
 
+nav.navbar{
+    /* height: 6rem; */
+    z-index: 1050;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.navbar-item{
+    border-top: 1px solid #fff;
+    height: min-content !important;
+}
+
+.navbar-item .offcanvas-body{
+    padding-top: 6rem;
+}
+
+.navbar-item .offcanvas-body .icon{
+    width: 52px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+
+.navbar-item .burung{
+    height: 20vh;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.navbar-item .col-4 p:nth-child(2){
+    font-size: .9rem;
+    color: #d6d6d6;
+}
+
+.navbar-collapse .inner-menu{
+    height: 100%;
+}
+
+.navbar-toggler{
+    border: 1px solid #fff !important;
+}
+
+.navbar-toggler:focus{
+    outline: unset !important;
+    box-shadow: unset !important;
+}
+
+.navbar-toggler-icon{
+    filter: invert(1) !important;
+}
+
+
+
 #hero-top-50{
     height: 45vh;
     background-size: cover !important;
@@ -600,7 +652,17 @@ ol.visi li::before{
     color: #2980b9;
 }
 
+@media only screen and (max-width : 576px){
+    #content-about{
+        padding: 1rem;
+        width: 90vw;
+    }
+}
 
+
+
+
+/* ---------------------FOOTER */
 footer{
     background-color: #2980b9;
     color: #fff;
@@ -671,6 +733,83 @@ footer{
 
 footer .copyright{
     border-top: 1px solid #2470a2;
+}
+
+@media only screen and (max-width : 576px){
+    .footer-head{
+        flex-direction: column;
+    }
+
+    .footer-head .items i{
+        font-size: 1.5rem;
+    }
+
+    .sidemap-icon{
+        font-size: 1.5rem;
+    }
+
+    .footer-head .items:nth-child(1){
+        width: unset;
+    }
+
+    .footer-head .items{
+        margin-bottom: 15px;
+    }
+
+    .footer-head .items:last-child{
+        width: 100%;
+    }
+
+    .footer-sosmed{
+        justify-content: space-between;
+        margin-right: 18px;
+    }
+
+    .footer-sidemap{
+        flex-direction: column;
+    }
+
+    .footer-sidemap .item{
+        width: unset;
+        border-right: none;
+    }
+
+    footer .accordion-item{
+        background-color: unset !important;
+        color: #fff;
+        border: none !important;
+    }
+
+    footer .accordion-button{
+        background-color: unset !important;
+        color: #fff !important;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #fff ;
+    }
+
+    footer .accordion-button:focus{
+        border-bottom: 1px solid #fff ;
+        outline: unset !important;
+        box-shadow: unset !important;
+    }
+
+    footer .accordion-button:not(.collapsed){
+        box-shadow: none !important;
+    }
+
+    footer .accordion-button::after{
+        filter: invert(1);
+    }
+
+    footer .accordion-body{
+        padding-top: 5px;
+    }
+
+    .footer-sidemap{
+        padding-left: 0;
+    }
+
 }
 
 
